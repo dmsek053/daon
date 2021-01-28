@@ -1,0 +1,147 @@
+@charset 'utf-8';
+@import url('common.css');
+
+
+.about{width:100%; margin: 0 auto;}
+.about .about_daon{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding:200px 0;
+}
+.about .explan01{
+	width:60%; margin:0 0 0 10%;
+	opacity: 0;
+	animation: ani_explan01 2s forwards cubic-bezier(0.4, 0.2, 0.2, 1);
+}
+@keyframes ani_explan01 {
+	0%{transform: translateY(0px);}
+	100%{opacity: 1; transform:translateX(20px);}
+}
+.about figure{
+	width:40%; margin:0 10% 0 0;
+	border-radius: 100%;
+	overflow: hidden;
+}
+.about figure img{
+	transition: 1.5s cubic-bezier(0.4, 0.2, 0.2, 1);
+	transform:scale(1);
+
+}
+
+
+
+.about .about_daon:hover figure img{
+	transform:scale(1.1);
+}
+
+
+.about .about_daon:nth-of-type(even) figure{order: 1; margin:0 0 0 10%;}
+.about .about_daon:nth-of-type(even) .explan01{order: 2; margin:0 10% 0 5%;}
+.about .about_daon:nth-of-type(even) {background-color: #d8ecf0;}
+.about .about_daon:nth-of-type(even) p:nth-of-type(1){color:#3885ca;}
+
+
+
+
+
+
+
+.explan01 h2{
+	font-family: 'Noto Serif KR', serif;
+	color:#63b3e8;
+	line-height: 1;
+	font-size: 3.125em;
+	padding-left: 30px;
+	position: relative;
+}
+.explan01 h2:before{
+	content: '';
+	width:2px; height:90px;
+	background:#63b3e8;
+	display: inline-block;
+	position: absolute;
+	left:0; bottom:0;
+}
+.explan01 p:nth-of-type(1){
+	color:#8dd3ea;
+	font-size: 1.250em;
+	line-height: 1.2;
+	margin: 50px 0;
+}
+.explan01 p:nth-of-type(2){
+	color:black;
+	white-space: pre-line;
+	line-height: 1.6;
+	font-size: .8em;
+}
+@media (min-width:1025px){
+	.about_daon .explan01 p:nth-of-type(2){font-size: 1em;}
+}
+
+@media (max-width:1024px){
+	.about .explan01{opacity: 1;}
+
+	.explan01 h2:before{height:55px;}
+	.about .explan01{
+		opacity: 1;
+		transform:translateX(20px);
+	}
+	.fac_daon .explan02 p:nth-of-type(2){margin:0 auto;}
+}
+
+@media (max-width:800px){
+	.about .about_daon{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		padding:100px 0;
+	}
+	.explan01 h2:before{display: none;}
+	.about .explan01{
+		width:85%;
+		text-align: center;
+	}
+	.about .explan01 p{
+		width:90%;
+	}
+	.about .explan01 p:nth-of-type(1){
+		margin:5% 0;
+		font-size: 2.5em;
+	}
+	.explan01 h2{
+		width:90%; padding-left:0; line-height: 1.3;
+		margin:5% 0;
+		font-size: 4em;
+	}
+	.explan01 p:nth-of-type(2){
+		margin-bottom: 30px;
+		font-size: 1.9em;
+		white-space: normal;
+		text-align: center;
+	}
+	.about figure{width:45%;}
+	.about .about_daon:nth-of-type(1n) figure{order: 1; margin:0 auto;}
+	.about .about_daon:nth-of-type(1n) .explan01{order: 2; margin:0 auto;}
+
+	.about .about_daon:nth-of-type(even) figure{order: 1; margin:0 auto;}
+	.about .about_daon:nth-of-type(even) .explan01{order: 2; margin:0 auto;}
+	.explan01 p:nth-of-type(1){
+		margin: 30px 0;}
+
+	.reservation_btn {display: none;}
+
+	
+
+}
+	
+@media (max-width:480px){
+	.explan01 h2{display: none;}
+	.about .explan01 p:nth-of-type(1){
+		margin: 15% 0;}
+
+}
+
+
+
