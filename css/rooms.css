@@ -24,12 +24,12 @@
 }
 
 .rooms_info figure{
-	margin:0 10px;
 	position: relative;
 	opacity: 0;
 	transition: .6s;
 	transform:translateY(40px);
 	animation: ani_room 3s forwards;
+	padding:0 10px;
 }
 @keyframes ani_room{
 	0%{opacity: 0; transform: translateY(40px);}
@@ -75,15 +75,21 @@
 	background:50% 50% url('../imgs/rooms_info_btnR.png') no-repeat white;
 }
 
-@media (min-width:1025px){
-	.rooms{height:100vh;}
+@media (min-width:1025px){.rooms{height:100vh;}}
 
-}
 @media (max-width:1024px){
+	.rooms_info{
+		display: flex;
+		flex-wrap: wrap;
+		margin:100px auto 200px auto;
+	}
+}	.rooms_cont p{font-size: 1.3em;}
+
 	.rooms_info figure{
+		width: 48%;
 		opacity: 1;
 		transform:translateY(0px);
-		margin:0 5px;
+		margin:15px 0;
 	}
 	.rooms_info figcaption{
 		margin-left: 5px;
@@ -92,40 +98,19 @@
 		width:40px; height:40px;
 		margin:0 3px;
 	}
-	.rooms_info{
-		margin:100px auto 200px auto;
-	}
-	.rooms_cont p{font-size: 1.3em;}
-
-	.rooms_info{
-		display: flex;
-		flex-wrap: wrap;
-		margin:50px auto 120px auto;
-		}
-	.rooms_info figure{
-		width: 48%;;
-}
 
 @media (max-width:800px){
-	.rooms_info figure{
-		margin:15px 0;
-	}
-	.rooms h2{margin-top:120px;}
-	.rooms_info figure figcaption{font-size: 1.6em;}
-	.rooms_info button{display: none;}
-	.rooms_cont h2{font-size: 4em;}
-	.rooms_cont p{font-size: 2em; width: 80%; margin: 0 auto;}
+	.rooms_info{margin:50px auto 120px auto;}
+	.rooms h2{margin-top:120px; font-size: 4em;}
+	.rooms_cont p{font-size: 2em;}
+	.rooms_info figcaption{font-size: 1.7em;}
 
 
 }
-	
+
 @media (max-width:480px){
 	.rooms{padding-top:10%;}
-	.rooms_info{
-		display: flex;
-		flex-wrap: wrap;
-		margin:50px auto 100px auto;
-		}
+	.rooms_info{margin:50px auto 100px auto;}
 	.rooms_info figure{
 		width: 100%;
 		margin:15px 0;
@@ -134,12 +119,10 @@
 		margin-top:100px;
 		font-size: 4em;
 	}
+	.rooms_cont p{width: 80%; margin: 0 auto;}
 	.rooms_info figure button{display: none;}
 	.rooms_info figure figcaption{
 		font-size: 2em;
 		margin-left: 6%;
 	}
-
-
-}
 }
