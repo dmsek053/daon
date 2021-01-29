@@ -2,24 +2,25 @@
 @import url('common.css');
 
 
-.rooms{width: 100%; margin:0 auto;
+.rooms{
+	width: 100%; margin:0 auto;
+	margin-top:15%;
 }
-
+.rooms_cont{margin-bottom: 5%;}
 .rooms h2{
 	text-align: center;
 	color:#63b3e8;
 	font-size: 3.125em;
 	font-family: 'Noto Serif KR', serif;
 	line-height: 0.8;
-	margin-top: 150px;
 }
-
+.rooms_cont p{text-align: center;}
 .rooms_info{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	width: 80%; 
-	margin:150px auto 180px auto;
+	margin:0 auto;
 }
 
 .rooms_info figure{
@@ -74,7 +75,10 @@
 	background:50% 50% url('../imgs/rooms_info_btnR.png') no-repeat white;
 }
 
+@media (min-width:1025px){
+	.rooms{height:100vh;}
 
+}
 @media (max-width:1024px){
 	.rooms_info figure{
 		opacity: 1;
@@ -85,12 +89,13 @@
 		margin-left: 5px;
 	}
 	.rooms_info button{
-		width:25px; height:25px;
+		width:30px; height:30px;
 		margin:0 3px;
 	}
 	.rooms_info{
 		margin:100px auto 200px auto;
 	}
+	.rooms_cont p{font-size: 1.3em;}
 }
 
 @media (max-width:800px){
@@ -105,6 +110,10 @@
 	}
 	.rooms h2{margin-top:120px;}
 	.rooms_info figure figcaption{font-size: 1.6em;}
+	.rooms_info button{display: none;}
+	.rooms_cont h2{font-size: 4em;}
+	.rooms_cont p{font-size: 2em; width: 80%; margin: 0 auto;}
+
 
 }
 	
