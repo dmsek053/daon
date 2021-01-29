@@ -16,14 +16,11 @@
 .fac_daon .explan02{
 	width:60%;
 	margin-left:10%;
-	transform:translateY(20px);
-	opacity: 0;
-	transition: 1s;
-
+	animation: ani_explan02 4s forwards;
 }
-.fac_daon:hover .explan02{
-	transform:translateY(0);
-	opacity: 1;
+@keyframes ani_explan02{
+	0%{opacity: 0;}
+	100%{opacity: 1;}
 }
 
 
@@ -93,6 +90,8 @@
 .fac_daon:nth-of-type(even) p:nth-of-type(2){color:#f0eee4;}
 .fac_daon:nth-of-type(even) h2:before{background:#dafafc;}
 
+footer{border-top: 1px solid rgba(255, 255, 255, 0.5);}
+
 
 @media (max-width:1024px){
 	.fac_daon img{
@@ -149,5 +148,4 @@
 		font-size: 2em;
 	}
 	
-	footer{border-top: 1px solid white;}
 }
