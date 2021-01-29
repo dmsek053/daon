@@ -91,6 +91,7 @@
 }
 
 @media (max-width:800px){
+	.about{ padding-top: 10%;}
 	.about .about_daon{
 		display: flex;
 		justify-content: center;
@@ -137,6 +138,7 @@
 }
 	
 @media (max-width:480px){
+	.about{ padding-top: 10%;}
 	.explan01 h2{display: none;}
 	.about .explan01 p:nth-of-type(1){
 		margin: 15% 0;}

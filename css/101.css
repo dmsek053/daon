@@ -121,8 +121,6 @@
 
 .reser_date{
 	display: flex; justify-content: space-between;
-
-
 }
 
 .reser_date input{
@@ -130,10 +128,11 @@
 	padding:20px;
 	width:50%;
 	border:1px solid #3885ca;
+	font-size: .8em;
+
 }
 .reser_date input:nth-of-type(1){border-top-left-radius: 20px;}
 .reser_date input:nth-of-type(2){border-top-right-radius:20px;}
-
 
 
 
@@ -144,7 +143,7 @@
 	border:1px solid #3885ca;
 	border-bottom-left-radius: 20px;
 	border-bottom-right-radius: 20px;
-
+	font-size: .8em;
 }
 
 
@@ -159,13 +158,34 @@
 	font-size: 1em;
 }
 
-
+@media (min-width:800px){
+	.reser_submit_mobile{display: none;}
+}
 @media (max-width:1024px){
-	
 }
 
 @media (max-width:800px){
-	
+	body{font-size: 85%;}
+	.rooms_info_101 h2{font-size: 2.5em;}
+	.reservation_window{display: none;}
+	.reservation_cont{width: 100%;}
+	.reservation_cont02{width: 100%;}
+	.rooms_info figure figcaption p{font-size: 1em;}
+	.reser_submit_mobile{
+		position: fixed;
+		right:0%; bottom:0%;
+		z-index: 999;
+		width: 100%;
+	}
+	.reser_submit_mobile input{
+		width: 100%;
+		border:none;
+		padding:15px;
+		background:#3885ca;
+		color:white;
+		font-size: 1.4em;
+	}
+	footer{display: none;}
 
 }
 	
@@ -186,14 +206,14 @@
 
 
 
-.rooms{width: 100%; padding:100px 0; background:#d8ecf0;}
+.rooms{width: 100%; padding:10% 0; background:#d8ecf0;}
 .rooms h2{
 	text-align: center;
 	margin-bottom:70px;
 	color:#63b3e8;
-	font-size: 3.125em;
+	font-size: 3em;
 	font-family: 'Noto Serif KR', serif;
-	line-height: 0.8;	
+	line-height: 1;	
 }
 .rooms_info{
 	display: flex;
@@ -300,9 +320,10 @@
 		margin-left: 6%;
 	}
 	.rooms h2{
-		font-size: 2.5em;
+		font-size: 2.3em; width: 90%; margin-left: 5%;
 	}
 
-
-}
+	.visual_02_101{display: none;}
+	.visual_01_101{width: 100%;}
+	.visual_01_101 img{border-radius: 20px;}
 }

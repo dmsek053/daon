@@ -109,6 +109,7 @@
 }
 	
 @media (max-width:480px){
+	.rooms{padding-top:10%;}
 	.rooms_info{
 		display: flex;
 		flex-wrap: wrap;

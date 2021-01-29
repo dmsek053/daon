@@ -40,7 +40,7 @@ header article{
 	padding:30px 0;
 }
 header article h1 img{
-	width:88px; height:47px;
+	width:80px; height:45px;
 }
 header article nav{
 	display: flex;
@@ -386,7 +386,7 @@ header article .sub a{
 	margin: 0 auto 0;
 	backface-visibility: hidden;
 	position: fixed;;
-	right:10%; bottom:10%;
+	right:10%; bottom:15%;
 	z-index: 99;
 	opacity: 0;
 	animation:ani_reserv 1s 4s forwards;
@@ -407,7 +407,7 @@ header article .sub a{
 	background: #f8ac69;
 	cursor: pointer;
 	box-shadow: 0 0 0 #f8ac69;
-	animation: pulse 2s infinite;
+	animation: pulse 1.5s infinite;
   }
   .pulse-button:hover {animation: none;}
   
@@ -441,8 +441,6 @@ header article .sub a{
 }
 .about .explan01{
 	width:60%; margin:0 0 0 10%;
-	opacity: 0;
-	transition: 1.5s cubic-bezier(0.4, 0.2, 0.2, 1);
 }
 .about figure{
 	width:40%; margin:0 10% 0 0;
@@ -453,12 +451,6 @@ header article .sub a{
 	transition: 1.5s cubic-bezier(0.4, 0.2, 0.2, 1);
 	transform:scale(1);
 
-}
-
-
-.about .about_daon:hover .explan01{
-	opacity: 1;
-	transform:translateX(20px);
 }
 
 
@@ -617,34 +609,9 @@ header article .sub a{
 .rooms_info figure{
 	margin:0 10px;
 	position: relative;
-	opacity: 0;
-	transition: .6s;
-	transform:translateY(40px);
 }
 
 
-
-
-.rooms:hover figure:nth-of-type(1){
-	opacity: 1;
-	transform:translateY(0);
-	transition-delay: .3s;
-}
-.rooms:hover figure:nth-of-type(2){
-	opacity: 1;
-	transform:translateY(0);
-	transition-delay: .6s;
-}
-.rooms:hover figure:nth-of-type(3){
-	opacity: 1;
-	transform:translateY(0);
-	transition-delay: .9s;
-}
-.rooms:hover figure:nth-of-type(4){
-	opacity: 1;
-	transform:translateY(0);
-	transition-delay: 1.2s;
-}
 
 
 
@@ -766,14 +733,7 @@ header article .sub a{
 .fac_daon .explan02{
 	width:60%;
 	margin-left:10%;
-	transform:translateY(20px);
-	opacity: 0;
-	transition: 1s;
 
-}
-.fac_daon:hover .explan02{
-	transform:translateY(0);
-	opacity: 1;
 }
 
 
@@ -908,8 +868,6 @@ header article .sub a{
 	position: relative;
 }
 
-
-
 .way_to_come figure{
 	display:flex;
 	justify-content: space-between;
@@ -924,7 +882,8 @@ header article .sub a{
 	font-family: 'Noto Serif KR', serif;
 	line-height: 0.8;
 }
-.way_to_come figure figcaption{}
+.way_to_come iframe{width: 100%;}
+.way_to_come figure figcaption{width:100%; padding-left: 5%;}
 .way_to_come figure figcaption p{
 	width:100%;
 	text-align: left; margin-top:10px;
