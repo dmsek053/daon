@@ -94,6 +94,7 @@ footer{border-top: 1px solid rgba(255, 255, 255, 0.5);}
 
 
 @media (max-width:1024px){
+	.facilities{padding-top:6%;}
 	.fac_daon img{
 		width:40%;
 		transform:translateX(0%);
@@ -108,9 +109,9 @@ footer{border-top: 1px solid rgba(255, 255, 255, 0.5);}
 		opacity: 1;
 		padding-right: 10px;
 	}
-	.explan02 p:nth-of-type(2){margin-left:20px;}
+	.explan02 p:nth-of-type(2){margin-left:0; font-size: 1em;}
 	.explan02 h2:before{
-		height:90px;
+		height:70px;
 	}
 }
 
@@ -129,11 +130,12 @@ footer{border-top: 1px solid rgba(255, 255, 255, 0.5);}
 
 	.fac_daon:nth-of-type(1n) img{order:1;}
 	.fac_daon:nth-of-type(1n) .explan02{order: 2;}
-	.explan02 p:nth-of-type(1){display: none;}
+	.explan02 p:nth-of-type(1){display: none; font-size: 2em;}
 	.explan02 h2{margin:30px 0;}
 	.explan02 p:nth-of-type(2){
 		margin:0 auto;
 		white-space: normal;
+		font-size: 2em;
 	}
 }
 @media (max-width:480px){
