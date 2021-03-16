@@ -64,6 +64,35 @@ $(function(){
         });
 
 
+    //rooms info - prev, next
+    var ani04 = document.querySelector('.rooms_info figure p'); 
+    var ani04Len = ani03.querySelectorAll('img').length; 
+    var btnPre02 = document.querySelector('.rooms_info_btnL');
+    var btnNext02 = document.querySelector('.rooms_info_btnR');
+    var current02 = 0;
+
+    function next02(){
+        current02++;
+        if(current02 == ani04Len) current02 = 0;
+        ani04.style = 'transform:translateX('+ -100 * current02 + '%)';
+    }
+
+    function pre02(){
+        current02--; 
+        if(current02 == -1) current02 = ani04Len-1; // 0,1,2 번째
+        ani04.style = 'transform:translateX('+ -100 * current02 + '%)';  // 100%, 200%, 300%
+    }
+
+    btnNext02.addEventListener('click',function(e){
+        e.preventDefault();
+        next02();
+    });
+    btnPre02.addEventListener('click',function(e){
+        e.preventDefault();
+        pre02();
+
+    });
+
 
 
 

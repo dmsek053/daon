@@ -636,6 +636,15 @@ header article .sub a{
 	position: relative;
 	width: 100%; height:100%;
 	display: inline-block;
+	overflow: hidden;
+}
+.rooms_info figure a p{
+	width: 100%;
+	display: flex;
+	transition: .5s;
+}
+.rooms_info figure a p img{
+	min-width: 100%;
 }
 .rooms_info button{
 	width:40px; height:40px;
