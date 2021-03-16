@@ -133,7 +133,6 @@ header article .sub a{
 /* menu-trigger */
 
 
-
 @media (max-width:1024px){
 	body{font-size:90%;}
 	
@@ -176,16 +175,16 @@ header article .sub a{
 	margin: 0 auto;
 }
 .slide{
+	width: 100%;
 	overflow: hidden;
-
+}
+.slide span{
+	display: flex;
+	transition: 1.5s;
+	width: 100%;
 }
 .slide img{
-	width:100%; height:100vh;
-	animation: ani_slide 6s infinite alternate;
-}
-@keyframes ani_slide{
-	0%{transform:scale(1)}
-	100%{transform:scale(1.1);}
+	min-width:100%; height:100vh;
 }
 
 
@@ -441,7 +440,12 @@ header article .sub a{
 }
 .about .explan01{
 	width:60%; margin:0 0 0 10%;
+	transform: translateY(200px);
+	transition: 1s;
+	opacity: 0;
 }
+.about .explan01.active{transform:translateY(0); opacity: 1;}
+
 .about figure{
 	width:40%; margin:0 10% 0 0;
 	border-radius: 100%;
@@ -733,8 +737,12 @@ header article .sub a{
 .fac_daon .explan02{
 	width:60%;
 	margin-left:10%;
+	transform: translateY(200px);
+	transition: 1s;
+	opacity: 0;
 
 }
+.fac_daon .explan02.active{transform:translateY(0); opacity: 1;}
 
 
 
