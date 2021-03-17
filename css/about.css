@@ -11,13 +11,14 @@
 }
 .about .explan01{
 	width:60%; margin:0 0 0 10%;
+	transform: translateY(100px);
+	transition: 1.5s;
 	opacity: 0;
-	animation: ani_explan01 2s forwards cubic-bezier(0.4, 0.2, 0.2, 1);
 }
-@keyframes ani_explan01 {
-	0%{transform: translateY(0px);}
-	100%{opacity: 1; transform:translateX(20px);}
-}
+.about .explan01.active{transform:translateY(0); opacity: 1;}
+
+
+
 .about figure{
 	width:40%; margin:0 10% 0 0;
 	border-radius: 100%;

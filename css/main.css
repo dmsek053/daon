@@ -3,7 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@700&display=swap');
 
 
-
 html,body{margin:0;}
 p,figure,h1,h2,h3,h4,h5,h6{margin:0;}
 ul,li{list-style: none; margin:0; padding:0;}
@@ -118,7 +117,7 @@ header article .sub a{
 .menu-trigger span:nth-of-type(2) {	top: 20px;}
 .menu-trigger span:nth-of-type(3) {	bottom: 0;}
 
-/* hover */
+/* active */
 .menu-trigger:hover span:nth-of-type(1) {
 	-webkit-transform : translateY(20px) rotate(-315deg);
 	transform : translateY(20px) rotate(-315deg);
@@ -440,8 +439,8 @@ header article .sub a{
 }
 .about .explan01{
 	width:60%; margin:0 0 0 10%;
-	transform: translateY(200px);
-	transition: 1s;
+	transform: translateY(100px);
+	transition: 1.5s;
 	opacity: 0;
 }
 .about .explan01.active{transform:translateY(0); opacity: 1;}
@@ -451,10 +450,11 @@ header article .sub a{
 	border-radius: 100%;
 	overflow: hidden;
 }
+
+
 .about figure img{
 	transition: 1.5s cubic-bezier(0.4, 0.2, 0.2, 1);
 	transform:scale(1);
-
 }
 
 
@@ -570,7 +570,6 @@ header article .sub a{
 	.explan01 h2{display: none;}
 	.about .explan01 p:nth-of-type(1){
 		margin: 15% 0;}
-
 }
 
 
@@ -613,10 +612,23 @@ header article .sub a{
 .rooms_info figure{
 	margin:0 10px;
 	position: relative;
+	transform: translateY(100px);
+	opacity: 0;
+	transition: 1s;
 }
-
-
-
+.rooms_info figure.active{
+	transform: translateY(0%);
+	opacity: 1;
+}
+.rooms_info figure:nth-of-type(2).active{
+	transition-delay: .2s;
+}
+.rooms_info figure:nth-of-type(3).active{
+	transition-delay: .4s;
+}
+.rooms_info figure:nth-of-type(4).active{
+	transition-delay: .6s;
+}
 
 
 .rooms_info strong{
@@ -638,10 +650,9 @@ header article .sub a{
 	display: inline-block;
 	overflow: hidden;
 }
-.rooms_info figure a p{
-	width: 100%;
-	display: flex;
-	transition: .5s;
+.rooms_info figure a div{
+	display:flex;
+	transition:.5s;
 }
 .rooms_info figure a p img{
 	min-width: 100%;
@@ -655,6 +666,7 @@ header article .sub a{
 	transform: translateY(-50%);
 	opacity:0;
 	transition: .3s;
+	outline: 0;
 }
 .rooms_info figure a:hover button{opacity: .7;}
 .rooms_info figure a button:hover{opacity: 1;}

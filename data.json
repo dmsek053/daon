@@ -1,0 +1,28 @@
+{
+    "roomsInfo":[
+        {
+            "href" : "101.html",
+            "imgSrc" : ["imgs/room_info_01.png","imgs/room_info_02.png","imgs/room_info_03.png","imgs/room_info_04.png"],
+            "title" : "LOVE YOU 101호",
+            "detail" : "[ 복층·원룸형 ] 최대 인원 6인·침실 1개·욕실 1개 16평(약53㎡)"
+        },
+        {
+            "href" : "102.html",
+            "imgSrc" : ["imgs/room_info_02.png","imgs/room_info_04.png","imgs/room_info_03.png","imgs/room_info_01.png"],
+            "title" : "LOVE YOU 102호",
+            "detail" : "[ 복층·원룸형 ] 최대 인원 6인·침실 1개·욕실 1개 16평(약53㎡)"
+        },
+        {
+            "href" : "201.html",
+            "imgSrc" : ["imgs/room_info_03.png","imgs/room_info_01.png","imgs/room_info_02.png","imgs/room_info_04.png"],
+            "title" : "ONLY YOU 201호",
+            "detail" : "[ 복층·원룸형 ] 최대 인원 6인·침실 1개·욕실 1개 16평(약53㎡)"
+        },
+        {
+            "href" : "202.html",
+            "imgSrc" : ["imgs/room_info_04.png","imgs/room_info_01.png","imgs/room_info_02.png","imgs/room_info_03.png"],
+            "title" : "ONLY YOU 202호",
+            "detail" : "[ 복층·원룸형 ] 최대 인원 6인·침실 1개·욕실 1개 16평(약53㎡)"
+        }
+    ]
+}
