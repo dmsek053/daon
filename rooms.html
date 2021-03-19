@@ -7,6 +7,8 @@
     <link href="css/rooms.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./js/common.js"></script>
+    <script src="./js/rooms.js"></script>
+
 
 </head>
 <body>
@@ -15,12 +17,83 @@
 
 
 <main>
+    <div class="rooms_info_101">
+        <h2>Reservation</h2>
+        <div class="main_visual_101">
+            <ul class="visual_01_101">
+                <li><img src="imgs/101_01.png"></li>
+            </ul>
+            <ul class="visual_02_101">
+                <li><img src="imgs/101_02.jpg"></li>
+                <li><img src="imgs/101_03.jpg"></li>
+                <li><img src="imgs/101_04.jpg"></li>
+                <li><img src="imgs/101_05.jpg"></li>
+            </ul>
+        </div>
+        <div class="reservation_cont">
+            <h3>LOVE YOU 1동 101호</h3>
+            <p>모던하고 심플한 감성을 살린 룸입니다.
+                햇빛을 받을때마다 반짝거리는 타일이 더욱 로맨틱한 분위기를 연출해 줍니다.
+                복층 구조에 탁 트인 조망권으로 칼봉산이 보이는 경치를 경험해보세요.</p>
+        </div>
+    
+        <div class="reservation_window">
+            <div class="pop_up">
+                <form>
+                    <ul>
+                        <li class="reser_date">
+                            <input type="date" name="date" placeholder="날짜 추가" class="date1" required>
+                            <input type="date" name="date" placeholder="날짜 추가" class="date2" required>
+                        </li>
+                        <li class="heade_count">
+                            <select>
+                                <option selected>게스트 1명</option>
+                                <option>게스트 2명</option>
+                                <option>게스트 3명</option>
+                            </select>
+                        </li>
+                        <li class="sum">합계</li>
+                        <li class="reser_submit">
+                            <input type="submit" name="submit" value="지금 바로 예약하기">
+                        </li>            
+                    </ul>
+                </form>
+            </div>
+        </div>
+    
+        <!-- mobile -->
+        <div class="reser_submit_mobile">
+            <input type="submit" name="submit" value="지금 바로 예약하기">
+        </div>     
+        <!-- mobile -->
+    
+        <div class="reservation_cont02">
+            <ul>
+                <!-- data.json -->
+            </ul>
+        </div>
+    </div>
+    
+    
     <div class="rooms" id="rooms">
-        <h2>Rooms info</h2>
+        <h2>MORE OTHERS ROOMS</h2>
         <div class="rooms_info">
             <!-- data.json -->
         </div>
     </div>
+    
+    
+    <!--popup-->
+    <div class="poptrox-overlay">
+        <div class="poptrox-popup">
+            <div class="pic">
+                <img src="imgs/101_01.png" alt="">
+                <img src="css/close.svg" class="closer" alt="">
+            </div>
+        </div>
+    </div>
+    <!--//popup end-->
+    
 </main>
 
 <footer>

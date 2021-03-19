@@ -212,6 +212,115 @@ header article .sub a{
   
 
 
+
+
+
+
+
+
+
+
+  .rooms{width: 100%; margin:0 auto;
+  }
+  
+  .rooms h2{
+	  text-align: center;
+	  color:#63b3e8;
+	  font-size: 3.125em;
+	  font-family: 'Noto Serif KR', serif;
+	  line-height: 0.8;
+	  margin-top: 150px;
+  }
+  
+  .rooms_info{
+	  display: flex;
+	  justify-content: space-between;
+	  align-items: center;
+	  width: 80%; 
+	  margin:150px auto 200px auto;
+	  
+  }
+  
+  .rooms_info figure{
+	  margin:0 10px;
+	  position: relative;
+  }
+  
+  
+  .rooms_info strong{
+	  font-size: 1.25em;
+	  line-height: 1;
+	  font-weight: bold;
+	  display:inline-block;
+	  margin-bottom:15px;
+  }
+  .rooms_info figcaption{
+	  margin-left: 20px;
+	  font-size: 1em;
+	  line-height: 1.39;
+	  white-space: pre-line;
+  }
+  .rooms_info figure a{
+	  position: relative;
+	  width: 100%; height:100%;
+	  display: inline-block;
+	  overflow: hidden;
+  }
+  .rooms_info figure a div{
+	  display:flex;
+	  transition:.5s;
+  }
+  .rooms_info figure a p img{
+	  min-width: 100%;
+  }
+  .rooms_info button{
+	  width:40px; height:40px;
+	  border-radius: 100%;
+	  border:none;
+	  margin:0 5px;
+	  transform-origin: 50% 50%;
+	  transform: translateY(-50%);
+	  opacity:0;
+	  transition: .3s;
+	  outline: 0;
+  }
+  .rooms_info figure a:hover button{opacity: .7;}
+  .rooms_info figure a button:hover{opacity: 1;}
+  
+  .rooms_info_btnL{
+	  position: absolute;
+	  left:0; top:50%;
+	  background:50% 50% url('../imgs/rooms_info_btnL.png') no-repeat white;
+  }
+  .rooms_info_btnR{
+	  position:absolute;
+	  right:0; top:50%;
+	  background:50% 50% url('../imgs/rooms_info_btnR.png') no-repeat white;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   footer{
 	background: #63b3e8;
 	padding:25px 0;
