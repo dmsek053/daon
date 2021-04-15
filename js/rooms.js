@@ -152,8 +152,40 @@ $(function(){
 
 
         // 예약창 금액 합산
-        
- 
+        $(function(){
+            $('#Datepicker, #Datepicker').datepicker({
+                dateFormat: 'yy-mm-dd'
+            });
+        })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
